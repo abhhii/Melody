@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_padding">16dp</dimen>
+    <dimen name="playbar_height">48dp</dimen>
+    <dimen name="text_padding">8dp</dimen>
+    <dimen name="main_title_size">48sp</dimen>
+    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/list_padding" />
+
+    <LinearLayout
+        android:id="@+id/playbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/playbar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:background="@color/playBar_color">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/now_playing"
+            android:padding="@dimen/text_padding"
+            android:layout_weight="3"
+            android:typeface="sans" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_rewind_64"
+            android:layout_weight="1"
+            android:contentDescription="@string/previous_track"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_play_64"
+            android:layout_weight="1"
+            android:id="@+id/playbutton"
+            android:contentDescription="@string/play_button"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_fast_forward_64"
+            android:layout_weight="1"
+            android:contentDescription="@string/next_track"/>
+    </LinearLayout>
+</RelativeLayout>
+
